@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Navy blue and yellow theme */
+    --background: 220 60% 22%;
+    --foreground: 50 88% 67%;
+
+    --card: 220 60% 18%;
+    --card-foreground: 50 88% 67%;
+
+    --popover: 220 60% 18%;
+    --popover-foreground: 50 88% 67%;
+
+    /* Yellow primary color */
+    --primary: 50 88% 67%;
+    --primary-foreground: 220 60% 22%;
+
+    /* Darker navy secondary */
+    --secondary: 220 60% 15%;
+    --secondary-foreground: 50 88% 67%;
+
+    --muted: 220 60% 15%;
+    --muted-foreground: 50 40% 60%;
+
+    /* Yellow accent */
+    --accent: 50 88% 67%;
+    --accent-foreground: 220 60% 22%;
+
+    /* Success green */
+    --success: 140 60% 55%;
+    --success-foreground: 0 0% 100%;
+
+    /* Purple for special features */
+    --purple: 270 70% 60%;
+    --purple-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 50 40% 50%;
+    --input: 220 60% 18%;
+    --ring: 50 88% 67%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 220 60% 22%;
+    --sidebar-foreground: 50 88% 67%;
+    --sidebar-primary: 50 88% 67%;
+    --sidebar-primary-foreground: 220 60% 22%;
+    --sidebar-accent: 220 60% 15%;
+    --sidebar-accent-foreground: 50 88% 67%;
+    --sidebar-border: 50 40% 50%;
+    --sidebar-ring: 50 88% 67%;
+  }
+
+  .dark {
+    --background: 220 15% 12%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 15% 16%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 15% 16%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 25 100% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 80% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 45 100% 65%;
+    --accent-foreground: 220 15% 12%;
+
+    --success: 140 60% 55%;
+    --success-foreground: 0 0% 100%;
+
+    --purple: 270 70% 60%;
+    --purple-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 25 100% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
